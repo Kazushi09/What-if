@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIRUS</title>
+  <style>
+    body {
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .question {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .button {
+      background-color: pink;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+    .button:hover {
+      background-color: lightpink;
+    }
+    .button.no {
+      background-color: white;
+      color: pink;
+      border: 2px solid pink;
+    }
+    .button.no:hover {
+      background-color: pink;
+      color: white;
+    }
+    .image-container {
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .bear-image {
+      width: 200px;
+    }
+    .message-text {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="question">Will you be my valentine?</div>
+    <div class="buttons">
+      <button class="button yes">Yes</button>
+      <button class="button no">No</button>
+    </div>
+    <div class="image-container">
+      <img class="bear-image" src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Pink teddy bear">
+      <div class="message-text">HAPPY VALENTINES DAY TERESAAA CHAN</div>
+    </div>
+  </div>
+  <script>
+    const yesButton = document.querySelector('.yes');
+    const noButton = document.querySelector('.no');
+    const imageContainer = document.querySelector('.image-container');
+
+    yesButton.addEventListener('click', () => {
+      imageContainer.style.display = 'flex';
+    });
+
+    noButton.addEventListener('click', () => {
+      alert('gwenchana');
+      imageContainer.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
